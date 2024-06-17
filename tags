@@ -1,0 +1,17 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+) require	lua/plugins/astrolsp.lua	/^          function() require("astrolsp.toggles").buffer_semantic_tokens() end,$/;"	f
+) vim.lsp.buf.declaration	lua/plugins/astrolsp.lua	/^          function() vim.lsp.buf.declaration() end,$/;"	f
+M.apply 	lua/themes/monotheme.lua	/^M.apply = function()$/;"	f
+["[b"] 	lua/plugins/astrocore.lua	/^        ["[b"] = { function() require("astrocore.buffer").nav(-vim.v.count1) end, desc = "Previous buffer" },$/;"	f
+["]b"] 	lua/plugins/astrocore.lua	/^        ["]b"] = { function() require("astrocore.buffer").nav(vim.v.count1) end, desc = "Next buffer" },$/;"	f
+bufnr) require	lua/plugins/astrocore.lua	/^              function(bufnr) require("astrocore.buffer").close(bufnr) end$/;"	f
+callback 	lua/plugins/astrolsp.lua	/^          callback = function(args)$/;"	f
+cond 	lua/plugins/astrolsp.lua	/^          cond = function(client)$/;"	f
+config 	lua/plugins/user.lua	/^    config = function()$/;"	f
+on_attach 	lua/plugins/astrolsp.lua	/^    on_attach = function(client, bufnr)$/;"	f
+opts 	lua/plugins/none-ls.lua	/^  opts = function(_, config)$/;"	f
