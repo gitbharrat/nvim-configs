@@ -29,6 +29,9 @@ return {
       -- vim.cmd("colorscheme catppuccin")
     end,
   },
+  { "folke/tokyonight.nvim" },
+  { "kdheepak/monochrome.nvim" },
+  { "dasupradyumna/midnight.nvim" },
   { "morhetz/gruvbox" },
   { "sainnhe/gruvbox-material" },
   {
@@ -36,6 +39,8 @@ return {
     -- vim.cmd("colorscheme ")
   },
   { "rktjmp/lush.nvim" },
+  { "pauchiner/pastelnight.nvim" },
+  { "EdenEast/nightfox.nvim" },
   { "kabouzeid/nvim-jellybeans", requires = "rktjmp/lush.nvim" },
   { "kepano/flexoki-neovim" },
   { "marko-cerovac/material.nvim", as = "mountain_vscodedark" },
@@ -52,7 +57,18 @@ return {
   --     require("base46").load_all_highlights() -- Load all highlights from base46
   --   end,
   -- },
+  { "NLKNguyen/papercolor-theme" },
 
+  -- Setups Vertical Column
+  {
+    "lukas-reineke/virt-column.nvim",
+    config = function()
+      require("virt-column").setup {
+        char = "│", -- Customize the character used for the column
+        virt_text_pos = "eol", -- Position the virtual text at the end of the line
+      }
+    end,
+  },
   -- Telescope Tags
   {
     "ludovicchabant/vim-gutentags",

@@ -1,15 +1,9 @@
 --if true then return end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
--- This will run last in the setup process and is a good place to configure
--- things like custom filetypes. This just pure lua so anything that doesn't
--- fit in the normal config locations above can go here
-
-vim.opt.wrap = true
-
-vim.opt.linebreak = true
-
+vim.opt.textwidth = 120 -- Set the maximum width of text before it gets wrapped
+vim.opt.wrap = true -- Enable text wrapping
+vim.opt.linebreak = true -- Wrap lines at convenient points
 vim.opt.relativenumber = false
-
 vim.opt.shiftwidth = 4
 
 -- Custom highlight groups
@@ -53,49 +47,30 @@ vim.opt.shiftwidth = 4
 -- vim.api.nvim_set_hl(0, "TabLineFill", { bg = "#000000" })
 -- -- vim.api.nvim_set_hl(0, "TabLineSel", { bg = "#505050", fg = "#ffffff" })
 
--- Enable cursorline and cursorcolumn
--- vim.o.cursorline = true
--- vim.o.cursorcolumn = true
+-- Themes
+-----------------
+-- vim.cmd "colorscheme PaperColor"
+-- vim.cmd "colorscheme catppuccin-frappe"
+-- vim.cmd "colorscheme astrodark"
+-- vim.cmd "colorscheme carbonfox"
 
 -- Config for Kanagawa
 vim.cmd "colorscheme kanagawa-dragon"
-
--- In your AstroNvim configuration file
-
--- Set the line number color to be slightly lighter than the background
-vim.cmd [[
-  highlight LineNr guifg=#3A3A3A guibg=#181515
-  highlight CursorLineNr guifg=#FFFFFF guibg=#181515
-  highlight SignColumn guibg=#181515
-]]
---
--- -- Assuming 'gitsigns' plugin for showing git hunks
-vim.cmd [[
-  highlight GitSignsAdd guifg=#3A3A3A guibg=#181515
-  highlight GitSignsChange guifg=#3A3A3A guibg=#181515
-  highlight GitSignsDelete guifg=#3A3A3A guibg=#181515
-]]
-
--- If you are using other git sign plugins like vim-gitgutter or signify
--- Uncomment and use the appropriate section
-
--- vim-gitgutter plugin
 -- vim.cmd [[
---   highlight GitGutterAdd guifg=#3A3A3A guibg=#181515
---   highlight GitGutterChange guifg=#3A3A3A guibg=#181515
---   highlight GitGutterDelete guifg=#3A3A3A guibg=#181515
+--   highlight LineNr guifg=#3A3A3A guibg=#181515
+--   highlight CursorLineNr guifg=#FFFFFF guibg=#181515
+--   highlight SignColumn guibg=#181515
 -- ]]
-
--- signify plugin
 -- vim.cmd [[
---   highlight SignifySignAdd guifg=#3A3A3A guibg=#181515
---   highlight SignifySignChange guifg=#3A3A3A guibg=#181515
---   highlight SignifySignDelete guifg=#3A3A3A guibg=#181515
+--   highlight GitSignsAdd guifg=#3A3A3A guibg=#181515
+--   highlight GitSignsChange guifg=#3A3A3A guibg=#181515
+--   highlight GitSignsDelete guifg=#3A3A3A guibg=#181515
 -- ]]
-
 --
-vim.opt.spell = true
+
+vim.opt.spell = false
 vim.opt.spelllang = "en_us"
+vim.opt.colorcolumn = "120"
 
 -- Set up custom filetypes
 vim.filetype.add {
