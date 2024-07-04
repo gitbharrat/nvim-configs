@@ -6,6 +6,9 @@ vim.opt.linebreak = true -- Wrap lines at convenient points
 vim.opt.relativenumber = false
 vim.opt.shiftwidth = 4
 
+-- Theme
+vim.cmd "colorscheme tokyonight-night"
+
 -- Custom highlight groups
 -- -----------------------
 
@@ -55,7 +58,7 @@ vim.opt.shiftwidth = 4
 -- vim.cmd "colorscheme carbonfox"
 
 -- Config for Kanagawa
-vim.cmd "colorscheme kanagawa-dragon"
+-- vim.cmd "colorscheme kanagawa-dragon"
 -- vim.cmd [[
 --   highlight LineNr guifg=#3A3A3A guibg=#181515
 --   highlight CursorLineNr guifg=#FFFFFF guibg=#181515

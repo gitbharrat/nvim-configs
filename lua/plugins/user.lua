@@ -34,6 +34,7 @@ return {
   { "dasupradyumna/midnight.nvim" },
   { "morhetz/gruvbox" },
   { "sainnhe/gruvbox-material" },
+  { "projekt0n/github-nvim-theme" },
   {
     "rebelot/kanagawa.nvim",
     -- vim.cmd("colorscheme ")
