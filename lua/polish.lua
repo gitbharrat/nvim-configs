@@ -9,6 +9,9 @@ vim.opt.shiftwidth = 4
 -- Theme
 vim.cmd "colorscheme tokyonight-night"
 
+-- Tabline
+vim.opt.showtabline = 0
+
 -- Custom highlight groups
 -- -----------------------
 
