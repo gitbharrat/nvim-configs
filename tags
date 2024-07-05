@@ -13,5 +13,6 @@ bufnr) require	lua/plugins/astrocore.lua	/^              function(bufnr) require
 callback 	lua/plugins/astrolsp.lua	/^          callback = function(args)$/;"	f
 cond 	lua/plugins/astrolsp.lua	/^          cond = function(client)$/;"	f
 config 	lua/plugins/user.lua	/^    config = function()$/;"	f
+functions 	lua/polish.lua	/^    functions = { italic = false },$/;"	f
 on_attach 	lua/plugins/astrolsp.lua	/^    on_attach = function(client, bufnr)$/;"	f
 opts 	lua/plugins/none-ls.lua	/^  opts = function(_, config)$/;"	f

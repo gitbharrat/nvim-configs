@@ -7,7 +7,25 @@ vim.opt.relativenumber = false
 vim.opt.shiftwidth = 4
 
 -- Theme
-vim.cmd "colorscheme tokyonight-night"
+
+require("tokyonight").setup {
+  style = "night", -- You can choose from "storm", "night", "moon", or "day"
+  styles = {
+    comments = { italic = false },
+    keywords = { italic = false },
+    functions = { italic = false },
+    variables = { italic = false },
+  },
+  -- on_colors = function(colors) colors.bg = "#111111" end,
+  -- Additional configurations can go here
+  terminal_colors = true,
+  transparent = false,
+  sidebars = "dark", -- style for sidebars
+  floats = "dark", -- style for floating windows
+}
+
+-- Load the colorscheme
+vim.cmd [[colorscheme tokyonight]]
 
 -- Tabline
 vim.opt.showtabline = 0
